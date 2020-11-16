@@ -1,0 +1,4 @@
+package: .
+import:
+  - package: github.com/gocolly/colly
+  - package: github.com/Pallinder/go-randomdata

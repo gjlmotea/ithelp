@@ -1,0 +1,112 @@
+hash: 469a7bef898dd4c01381aede046aa1e946a85764620fa95fffddd565a879da7a
+updated: 2020-09-30T11:12:28.263648+08:00
+imports:
+- name: github.com/andybalholm/cascadia
+  version: 903109d295d56a99095f2cfab0c2ca8d4b22f648
+- name: github.com/antchfx/htmlquery
+  version: f04d0ddf47077a0882a3cfe6314b792c0ef526f7
+- name: github.com/antchfx/xmlquery
+  version: c43a9ea44a41141abd40cc2125be9558b5ae8763
+- name: github.com/antchfx/xpath
+  version: 0875c036385f866045f44b15be381167fc2295b4
+- name: github.com/gobwas/glob
+  version: e7a84e9525fe90abcda167b604e483cc959ad4aa
+  subpackages:
+  - compiler
+  - match
+  - syntax
+  - syntax/ast
+  - syntax/lexer
+  - util/runes
+  - util/strings
+- name: github.com/gocolly/colly
+  version: ca2f07cb3c921eec1b4993f4ff6f00f593dc3af0
+  subpackages:
+  - debug
+  - extensions
+  - proxy
+  - storage
+- name: github.com/golang/groupcache
+  version: 8c9f03a8e57eb486e42badaed3fb287da51807ba
+  subpackages:
+  - lru
+- name: github.com/golang/protobuf
+  version: d04d7b157bb510b1e0c10132224b616ac0e26b17
+  subpackages:
+  - proto
+- name: github.com/kennygrant/sanitize
+  version: 06ec0d0dbcd497d01e5189b16f5263f712e61a8e
+- name: github.com/Pallinder/go-randomdata
+  version: 26f4a641b55b152ed383ba02b30b99763401ade3
+- name: github.com/PuerkitoBio/goquery
+  version: 89946c829f29a2c154667e6194d4f409d8abcbde
+- name: github.com/saintfish/chardet
+  version: 3af4cd4741ca4f3eb0c407c034571a6fb0ea529c
+- name: github.com/temoto/robotstxt
+  version: 7c448aca1487b30704ec753041b76603f29abd3f
+- name: golang.org/x/net
+  version: c89045814202410a2d67ec20ecf177ec77ceae7f
+  subpackages:
+  - context
+  - html
+  - html/atom
+  - html/charset
+- name: golang.org/x/text
+  version: a8b4671254579a87fadf9f7fa577dc7368e9d009
+  subpackages:
+  - encoding
+  - encoding/charmap
+  - encoding/htmlindex
+  - encoding/internal
+  - encoding/internal/identifier
+  - encoding/japanese
+  - encoding/korean
+  - encoding/simplifiedchinese
+  - encoding/traditionalchinese
+  - encoding/unicode
+  - internal/language
+  - internal/language/compact
+  - internal/tag
+  - internal/utf8internal
+  - language
+  - runes
+  - transform
+- name: google.golang.org/appengine
+  version: 553959209a20f3be281c16dd5be5c740a893978f
+  subpackages:
+  - internal
+  - internal/base
+  - internal/datastore
+  - internal/log
+  - internal/remote_api
+  - internal/urlfetch
+  - urlfetch
+- name: google.golang.org/protobuf
+  version: 16365ed3d8cfe6a4797229f0b1b7588d0259755b
+  subpackages:
+  - encoding/prototext
+  - encoding/protowire
+  - internal/descfmt
+  - internal/descopts
+  - internal/detrand
+  - internal/encoding/defval
+  - internal/encoding/messageset
+  - internal/encoding/tag
+  - internal/encoding/text
+  - internal/errors
+  - internal/filedesc
+  - internal/filetype
+  - internal/flags
+  - internal/genid
+  - internal/impl
+  - internal/order
+  - internal/pragma
+  - internal/set
+  - internal/strs
+  - internal/version
+  - proto
+  - reflect/protoreflect
+  - reflect/protoregistry
+  - runtime/protoiface
+  - runtime/protoimpl
+testImports: []
