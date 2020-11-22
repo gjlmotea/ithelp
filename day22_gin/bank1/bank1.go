@@ -19,7 +19,7 @@ func main() {
 }
 
 func getBalance(context *gin.Context) {
-	var msg = "您的錢包裡有:" + strconv.Itoa(balance) + "元"
+	var msg = "您的帳戶內有:" + strconv.Itoa(balance) + "元"
 	context.JSON(http.StatusOK, gin.H{
 		"amount":  balance,
 		"status":  "ok",
@@ -28,10 +28,12 @@ func getBalance(context *gin.Context) {
 }
 
 func deposit(context *gin.Context) {
+	var status string
+	var msg string
+
 	input := context.Param("input")
 	amount, err := strconv.Atoi(input)
-	status := "status init"
-	msg := "msg init"
+
 	if err == nil {
 		if amount <= 0 {
 			amount = 0
@@ -55,10 +57,12 @@ func deposit(context *gin.Context) {
 }
 
 func withdraw(context *gin.Context) {
+	var status string
+	var msg string
+
 	input := context.Param("input")
 	amount, err := strconv.Atoi(input)
-	status := "status init"
-	msg := "msg init"
+
 	if err == nil {
 		if amount <= 0 {
 			amount = 0
