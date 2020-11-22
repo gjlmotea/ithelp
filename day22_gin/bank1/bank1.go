@@ -18,6 +18,7 @@ func main() {
 	router.Run(":80")
 }
 
+// getBalance 取得帳戶內餘額
 func getBalance(context *gin.Context) {
 	var msg = "您的帳戶內有:" + strconv.Itoa(balance) + "元"
 	context.JSON(http.StatusOK, gin.H{
@@ -27,6 +28,7 @@ func getBalance(context *gin.Context) {
 	})
 }
 
+// deposit 儲值、存款
 func deposit(context *gin.Context) {
 	var status string
 	var msg string
@@ -56,6 +58,7 @@ func deposit(context *gin.Context) {
 	})
 }
 
+// withdraw 提款
 func withdraw(context *gin.Context) {
 	var status string
 	var msg string
