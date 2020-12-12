@@ -2,29 +2,24 @@ package main
 
 import "fmt"
 
-var a = 123
+var i = 123 // 全域變數
 
-func main()  {
-	fmt.Println(&a)
+func main() {
+	fmt.Println(&i)
 
-	a = 123
-	fmt.Println(&a)
+	i = 123
+	fmt.Println(&i)
 
-	a := 123
-	fmt.Println(&a)
+	i := 123 // 全新的。func區塊內的區域變數
+	fmt.Println(&i)
 
-	a, b := 100, 99
-	fmt.Println(&a)
-
-	a, c := 456, "hello"
-	fmt.Println(a, b, c)
+	i, j := 123, 100
+	fmt.Println(&i, j) // 奇怪？i沒有變新的啊
 }
 
-/* result:
-0x53f108
-0x53f108
-0xc000094018
-0xc000094018
-456 99 hello
+/* 運行結果
+0x11662a0
+0x11662a0
+0xc0000b2008
+0xc0000b2008 100
 */
-
